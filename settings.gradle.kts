@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Pokedex Phincon"
 include(":app")
- 
+include(":core-data")

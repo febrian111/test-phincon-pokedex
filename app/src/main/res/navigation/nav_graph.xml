@@ -10,5 +10,32 @@
         android:name="com.febri.pokedexphincon.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/CapturedFragment"
+        android:name="com.febri.pokedexphincon.captured.CapturedFragment"
+        android:label="fragment_captured"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_capturedFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.febri.pokedexphincon.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail">
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/HomeTwoFragment"-->
+<!--        android:name="com.febri.pokedexphincon.home.HomeTwoFragment"-->
+<!--        android:label="fragment_home_two"-->
+<!--        tools:layout="@layout/fragment_home_two">-->
+<!--    </fragment>-->
 </navigation>

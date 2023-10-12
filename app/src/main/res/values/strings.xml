@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">Pokedex Phincon</string>
+
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+
+    <string name="check_internet_connection">Check internet connection.</string>
+
+    <string name="description">Description</string>
+    <string name="basic_info">Basic Info</string>
+    <string name="base_xp">Base XP</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="catch_rate">Catch Rate</string>
+    <string name="stats">Stats</string>
+    <string name="hp">HP</string>
+    <string name="attack">Attack</string>
+    <string name="defense">Defense</string>
+    <string name="special_attack">Special Attack</string>
+    <string name="special_defense">Special Defense</string>
+    <string name="speed">Speed</string>
+
+    <string name="content">With the idea of imparting programming
+      knowledge, Mr. Sandeep Jain, an IIT Roorkee alumnus started a
+      dream, GeeksforGeeks. Whether programming excites you or you feel
+      stifled, wondering how to prepare for interview questions or how to
+      ace data structures and algorithms, GeeksforGeeks is a one-stop solution.
+      With every tick of time, we are adding arrows in our quiver. From articles
+      on various computer science subjects to programming problems for practice,
+      from basic to premium courses, from technologies to entrance examinations,
+      we have been building ample content with superior quality. In a short span,
+      we have built a community of 1 Million+ Geeks around the world, 20,000+
+      Contributors and 500+ Campus Ambassadors in various colleges across the nation.
+      Our success stories include a lot of students who benefitted in their placements
+      and landed jobs at tech giants. Our vision is to build a gigantic network of
+      geeks and we are only a fraction of it yet.
+  </string>
 </resources>
