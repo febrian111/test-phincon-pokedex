@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clipToPadding="false"
-        android:paddingBottom="16dp">
+        android:paddingBottom="32dp">
 
         <ImageView
             android:id="@+id/poke_back"
@@ -87,7 +87,8 @@
                 android:id="@+id/relative_layout_one"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp">
+                android:layout_margin="8dp"
+                android:paddingBottom="32dp">
 
                 <TextView
                     android:id="@+id/poke_desc"

@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+
 import com.febri.pokedexphincon.databinding.FragmentCapturedBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -16,6 +18,8 @@ class CapturedFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
+    private val viewModel by viewModels<CapturedViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,

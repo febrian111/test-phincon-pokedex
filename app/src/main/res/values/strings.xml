@@ -20,6 +20,8 @@
     <string name="special_attack">Special Attack</string>
     <string name="special_defense">Special Defense</string>
     <string name="speed">Speed</string>
+    <string name="height_format">%d cm</string>
+    <string name="weight_format">%.1f kg</string>
 
     <string name="content">With the idea of imparting programming
       knowledge, Mr. Sandeep Jain, an IIT Roorkee alumnus started a
