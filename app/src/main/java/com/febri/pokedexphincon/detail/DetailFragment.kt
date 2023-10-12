@@ -18,8 +18,10 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.febri.core_data.model.Pokemon
-import com.febri.pokedexphincon.databinding.FragmentDetailBinding
 import com.febri.pokedexphincon.R
+import com.febri.pokedexphincon.databinding.FragmentDetailBinding
+import com.febri.pokedexphincon.databinding.FragmentDetailTwoBinding
+import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -50,6 +52,7 @@ class DetailFragment : Fragment() {
         arguments?.let { bundle ->
             setData(DetailFragmentArgs.fromBundle(bundle).pokemon)
         }
+
         return binding.root
     }
 
@@ -80,7 +83,6 @@ class DetailFragment : Fragment() {
 
     private fun setData(pokemon: Pokemon) {
         with(binding) {
-//            pokeId.text = requireContext().getString(R.string.pokemon_number_format, pokemon.id)
             pokeName.text = pokemon.name
             pokeGenera.text = pokemon.genera
             pokeInfoDesc.text = pokemon.description
@@ -94,13 +96,9 @@ class DetailFragment : Fragment() {
             pokeSpecialAttack.text = pokemon.stats[3].baseStat.toString()
             pokeSpecialDefense.text = pokemon.stats[4].baseStat.toString()
             pokeSpeed.text = pokemon.stats[5].baseStat.toString()
-//            pokeInfoTypeOne.text = pokemon.types[0].type.name
             pokeBack.setOnClickListener { activity?.onBackPressed() }
-//            setPokemonTypes(pokemon.types)
-//            if (viewModel.isPokemonFavorite(pokemon.id)) setFavoriteIcon(pokeFav)
             loadImage(pokeInfoImage, pokemon.sprites.other.officialArtwork.frontDefault)
-//            pokeFav.setOnClickListener { favoriteButtonClickListener(pokeFav, pokemon) }
-            dominantColor = pokemon.dominantColor!!
+            dominantColor = pokemon.dominantColor ?: Color.WHITE
             pokeScrollView.setBackgroundColor(dominantColor)
             activity?.window?.statusBarColor = dominantColor
         }
