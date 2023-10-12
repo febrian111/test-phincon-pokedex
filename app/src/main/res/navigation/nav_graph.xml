@@ -30,6 +30,9 @@
         android:name="com.febri.pokedexphincon.detail.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="pokemon"
+            app:argType="com.febri.core_data.model.Pokemon" />
     </fragment>
 
 <!--    <fragment-->

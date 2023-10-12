@@ -44,6 +44,8 @@ android {
 
 dependencies {
 
+    implementation(project(":core-data"))
+
     implementation(libs.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.febri.pokedexphincon.databinding.FragmentCapturedBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class CapturedFragment : Fragment() {
 
     private var _binding: FragmentCapturedBinding? = null
