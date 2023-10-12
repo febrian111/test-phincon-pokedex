@@ -7,8 +7,8 @@
         android:title="@string/home" />
 
     <item
-        android:id="@+id/favoritesFragment"
-        android:icon="@drawable/favorite"
-        android:title="@string/favorites" />
+        android:id="@+id/capturedFragment"
+        android:icon="@drawable/captured"
+        android:title="@string/captured" />
 
 </menu>

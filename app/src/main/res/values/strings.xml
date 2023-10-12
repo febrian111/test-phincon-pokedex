@@ -2,9 +2,10 @@
     <string name="app_name">Pokedex Phincon</string>
 
     <string name="home">Home</string>
-    <string name="favorites">Favorites</string>
+    <string name="captured">Captured</string>
 
     <string name="check_internet_connection">Check internet connection.</string>
+    <string name="captured_textview_message">Captured Pokemon</string>
 
     <string name="description">Description</string>
     <string name="basic_info">Basic Info</string>
